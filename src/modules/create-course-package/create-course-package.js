@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormInput, Header, Button } from './components';
+import { createCoursePackage } from './clients';
 import './create-course-package.scss';
 
 class CreateCoursePackage extends React.Component {
@@ -7,8 +8,8 @@ class CreateCoursePackage extends React.Component {
         super()
         this.state = {
             name: '',
-            months: '',
-            price: '',
+            number_of_months: 0,
+            price: 0,
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -20,20 +21,21 @@ class CreateCoursePackage extends React.Component {
         });
     }
 
-    validateState = () => !this.state.name || !this.state.months || !this.state.price
+    validateState = () => !this.state.name || !this.state['number_of_months'] || !this.state.price
 
-    submitForm = () => {
-        console.log(this.state)
+    submitForm = async() => {
+        const response = await createCoursePackage(this.state);
+        console.log(response)
     }
 
     render() {
         return (
             <div className="create-course-package">
                 <Header children='Create Course Package' />
-                <FormInput placeholder="Name" handleChange={this.handleChange('name')} />
-                <FormInput placeholder="Number of Months" handleChange={this.handleChange('months')} />
-                <FormInput placeholder="Price" handleChange={this.handleChange('price')} />
-                <Button disabled={this.validateState()} onSubmit={this.submitForm}/>
+                <FormInput type="text" placeholder="Name" handleChange={this.handleChange('name')} />
+                <FormInput type="number" placeholder="Number of Months" handleChange={this.handleChange('number_of_months')} />
+                <FormInput type="number" placeholder="Price" handleChange={this.handleChange('price')} />
+                <Button disabled={this.validateState()} onSubmit={this.submitForm} />
             </div>
         )
     }

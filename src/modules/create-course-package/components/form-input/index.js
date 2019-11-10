@@ -5,6 +5,7 @@ import './form-input.scss';
  * proptypes needed:
  * handlechange
  * PlaceHolder
+ * Type
  */
 
 class FormInput extends React.Component {
@@ -20,6 +21,7 @@ class FormInput extends React.Component {
             <input
                 className="input"
                 placeholder={this.props.placeholder}
+                type={this.props.type}
                 onChange={(e) => this.props.handleChange(e.target.value)}
             />
         )
