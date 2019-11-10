@@ -1,0 +1,13 @@
+@import "../../../../Style/colors";
+
+.input {
+  background-color: $lightBlue4;
+  border: 2px solid $lightBlue1;
+  width: 95%;
+  height: 35px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 20px;
+}
