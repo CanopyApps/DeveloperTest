@@ -1,0 +1,13 @@
+@import "../../../../Style/colors";
+
+.cardButton {
+  text-align: center;
+  background-color: $lightBlue1;
+  border: none;
+  color: $white;
+  width: 101%;
+  padding: 20px 0 20px 0;
+  border-radius: 0 0 10px 10px;
+  font-size: 24px;
+  font-weight: 500;
+}

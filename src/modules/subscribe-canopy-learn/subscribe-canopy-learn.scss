@@ -1,0 +1,15 @@
+@import "../../Style/colors";
+
+.subscribe-canopy-learn {
+  &__header {
+    color: $Blue;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

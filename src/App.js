@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { CreateCoursePackage } from './modules/create-course-package';
 import { SubscribeCanopyLearn } from './modules/subscribe-canopy-learn';
-import NavMenu from './modules/shared-components/NavMenu'
+import { NavMenu } from './modules/navmenu'
 
 
 function App() {

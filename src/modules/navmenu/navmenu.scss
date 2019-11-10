@@ -1,0 +1,20 @@
+@import "../../Style/colors";
+
+.navmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $lightBlue1;
+  padding: 10px;
+
+  &__image {
+    height: 50px;
+    width: 250px;
+  }
+
+  &__rotate-90 {
+      color:white;
+      transform: rotate(90deg);
+  }
+}
