@@ -4,7 +4,8 @@
   background-color: $lightBlue1;
   border: none;
   color: $white;
-  width: 100%;
+  min-width: 300px;
+  max-width: 300px;
   height: 45px;
   border-radius: 2px;
   font-size: 16px;
@@ -14,8 +15,9 @@
 .buttonDisabled {
   background-color: $greyWhite;
   border: none;
-  color: $white;
-  width: 100%;
+  color: $grey;
+  min-width: 300px;
+  max-width: 300px;
   height: 45px;
   border-radius: 2px;
   font-size: 16px;

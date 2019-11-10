@@ -1,7 +1,16 @@
+@import "../../Style/colors";
+
 .create-course-package {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 500px;
+  &__header {
+    font-weight: 300;
+    color: $Blue;
+    text-align: center;
+  }
+
+  &__content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

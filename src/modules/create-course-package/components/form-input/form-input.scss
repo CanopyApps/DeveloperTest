@@ -3,7 +3,8 @@
 .input {
   background-color: $lightBlue4;
   border: 2px solid $lightBlue1;
-  width: 95%;
+  min-width: 270px;
+  max-width: 270px;
   height: 35px;
   border-radius: 2px;
   margin-bottom: 20px;
