@@ -12,17 +12,20 @@ class FormInput extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            isDirty: false
+            isError: false
         }
     }
 
     render() {
         return (
             <input
-                className="input"
+                className={this.state.isError ? "input-error" : "input"}
+                onChange={(e) => this.props.handleChange(e.target.value)}
+                onBlur={(e) => this.setState({
+                    isError: Boolean(!e.target.value)
+                })}
                 placeholder={this.props.placeholder}
                 type={this.props.type}
-                onChange={(e) => this.props.handleChange(e.target.value)}
             />
         )
     }
