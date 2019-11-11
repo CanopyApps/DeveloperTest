@@ -12,7 +12,7 @@ export const getAllCoursePackages = async () => {
 
 export const editCoursePackage = async (id, params) => {
     try {
-        console.log(id, params)
+        console.log('future feature: edit a course ')
         // const response = axios.post(`http://localhost:4000/api/v1/course_packages/${params}`, params)
         // return response
     } catch (e) {

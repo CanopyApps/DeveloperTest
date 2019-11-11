@@ -13,7 +13,7 @@ const NavMenu = () => {
             <h1
                 children="|||"
                 className="navmenu__rotate-90"
-                onClick={() => console.log('het')}
+                onClick={() => console.log('future feature: navigate')}
             />
         </div>
     )
